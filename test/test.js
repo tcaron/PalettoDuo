@@ -7,3 +7,9 @@ PalettoTestCase.prototype.testStory1 = function () {
 
     assertTrue(EngineTest.juxtapositionInit());
 };
+
+
+PalettoTestCase.prototype.testStory2 = function () {
+
+    assertTrue(EngineTest.check_corner('jaune'));
+};

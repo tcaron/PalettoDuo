@@ -46,5 +46,18 @@ var Engine = function () {
     }
 
 
+    this.check_corner = function(marbleColor){
+
+        if (gameBoard[0][0] == marbleColor || gameBoard[0][5] == marbleColor || gameBoard[5][5] == marbleColor || gameBoard[5][0] == marbleColor)
+        {
+            return true;
+        }
+
+      else { return false;}
+
+
+    }
+
+
 
 }
