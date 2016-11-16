@@ -117,6 +117,17 @@ var Engine = function () {
         }
         return marbles_ok;
     };
+
+    this.changePlayer = function (player){
+
+        if (player == 1){
+
+            player = 2;
+        }
+        else {player = 1;}
+
+
+    }
     this.play = function(color){
 
         var marbles_ok = this.get_marble_ok();
@@ -133,4 +144,18 @@ var Engine = function () {
 
     };
 
+    this.getException = function (color){
+
+
+        console.log("ERROR IMPOSSIBLE "+color+"");
+        return true;
+
+    }
+
+    this.getWinner = function(player){
+
+        console.log('le joueur '+player+' a gagné')
+        return true;
+
+    }
 };
